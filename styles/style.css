@@ -55,36 +55,41 @@ nav>ul li a {
     background-size: contain;
     margin-bottom: 80px;
 }
-.main-camera-image{
+
+.main-camera-image {
     width: 100%;
 }
+
 .banner-title {
     color: #3A3A3A;
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.banner-content{
+
+.banner-content {
     margin-bottom: 30px;
 }
+
 .banner-description {
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.banner-btn{
+
+.banner-btn {
     color: #FFF;
-font-size: 16px;
-font-weight: 700;
-border-radius: 41px;
-background: #E02C6D;
-border: none;
-padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    padding: 15px;
 }
 
 /* card section styles */
-.card-container{
+.card-container {
     width: 70%;
     margin: 30px auto;
     display: flex;
@@ -92,66 +97,174 @@ padding: 15px;
     flex-wrap: wrap;
     gap: 50px;
     padding: 40px 30px;
-    box-shadow:2px 1px 3px gray 
+    box-shadow: 2px 1px 3px gray
 }
+
+/* popular collection styles  */
+.popular-collection-container {
+    width: 65%;
+    margin: 60px auto;
+}
+
+.popular-content {
+    margin: 60px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+.popular-title {
+    color: #3A3A3A;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.gear-box {
+    box-shadow: 5px 5px 10px gray;
+    width: max-content;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.gear-name {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.gear-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.gear-description {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 0px;
+
+}
+
+.rating {
+    font-size: smaller;
+}
+
+.checked {
+    color: orange;
+}
+
+.see-more {
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
 /* responsive section  */
 /* for mobile  */
-@media screen and (max-width:576px){
-    nav{
+@media screen and (max-width:576px) {
+    nav {
         flex-direction: column;
-       
+
     }
-    nav h1,ul>li{
+
+    nav h1,
+    ul>li {
         text-align: center;
     }
-    nav>ul{
+
+    nav>ul {
         gap: 7px;
-        
+
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         background-position: top right;
 
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 28px;
     }
-    .banner-btn{
+
+    .banner-btn {
         margin-left: 50px;
     }
-    .card-container img{
+
+    .card-container img {
         width: 45px;
     }
-    .card-container{
-            gap: 20px;
-            padding: 20px 15px;
+
+    .card-container {
+        gap: 20px;
+        padding: 20px 15px;
     }
-}
-/* for medium devices  */
-@media screen and (min-width:576px) and (max-width:960px){
-    nav{
-        flex-direction: column;
-       
-    }
-    nav h1,ul>li{
-        text-align: center;
-    }
-    nav>ul{
-        gap: 10px;
+    .popular-content{
+        grid-template-columns: 1fr;
+        
         
     }
-    .banner-container{
+    .gear-box img{
+        width: 100%;
+    }
+    .gear-box{
+        width: fit-content;
+
+    }
+   
+}
+
+/* for medium devices  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    nav h1,
+    ul>li {
+        text-align: center;
+    }
+
+    nav>ul {
+        gap: 10px;
+
+    }
+
+    .banner-container {
         flex-direction: column-reverse;
         background-position: top right;
 
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 28px;
     }
-    .banner-btn{
+
+    .banner-btn {
         margin-left: 50px;
     }
-    .banner-content{
+
+    .banner-content {
         margin-bottom: 250px;
+    }
+    .popular-content{
+        grid-template-columns: 1fr ;
+       
+    }
+    .gear-box img{
+        width: 100%;
+    }
+    .gear-box{
+        width: fit-content;
+
     }
 }
